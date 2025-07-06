@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fale conosco e tire suas dúvidas sobre segurança privada eletrônica.">
+  <title>Contato</title>
+  <link rel="stylesheet" href="css/estilo.css" />
+</head>
+<body>
+  <header>
+    <h1>Contato</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="residencial.html">Residencial</a></li>
+        <li><a href="empresarial.html">Empresarial</a></li>
+        <li><a href="contato.html" class="ativo">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form onsubmit="return validarFormulario()">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required />
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+    <button onclick="voltarTopo()" id="btnTopo" style="display:none;">⬆️ Topo</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Vanderlei | Segurança Privada Eletrônica</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
